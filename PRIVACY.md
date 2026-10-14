@@ -8,11 +8,12 @@ an answer goes to Anthropic through your own Claude Code, as in any of your Clau
 
 | Place | What's there | How long |
 | --- | --- | --- |
-| Chrome's extension storage (on your disk, in your Chrome profile; not the cache) | Partners, briefs, deep dives, chats, notes, next steps, people cards, the schedule, your background, settings | Until you clear it, or remove the extension |
+| Chrome's extension storage (on your disk, in your Chrome profile; not the cache) | Partners, briefs, deep dives, chats, notes, next steps, people cards, the schedule, your background (with the docs read from your repos), settings | Until you clear it, or remove the extension |
 | `~/Partner Copilot/Backups/` | A backup a minute after each change (one file a day), plus one set aside before a restore, and before a change removes partners, deep dives, notes, people you looked up, or part of the schedule or your background (the day's first change too) | The newest 7 days and 10 set-aside backups |
 | `~/Partner Copilot/Partners/<Company>/` | `deep-dive.md`, `notes.md` (with your next step), `people.md` (the people you looked up), and one `chat-<date>-<time>.md` per conversation, named by when it started, in your time zone | Kept, even after Clear all: delete them yourself |
 | `~/.gauntlet-copilot/` | The helper (`app/`), the extension folder you loaded (`extension/`), the helper's settings with its pairing token, and its log | Until you remove the folder |
 | `~/.gauntlet-copilot/results/` | Each deep dive, Redo and look-up of people as it finished, so a panel closed mid-run saves it when you reopen it. Readable by you only | 7 days, even after Clear all |
+| Your computer's temp folder (`gpc-repo-…`) | A repo while its docs are read: its file list, and the contents of those docs only | Removed as soon as they're read |
 | `~/.claude/projects/<…gauntlet-copilot-workspace>/` | Claude Code's session for each deep dive and chat | The ones nothing uses any more are cleaned up; Claude Code also deletes any older than 30 days |
 
 - **Kept lean.** Each PDF keeps the 25,000 characters a deep dive can use, and each chat its latest
@@ -23,9 +24,9 @@ an answer goes to Anthropic through your own Claude Code, as in any of your Clau
   who attends for each partner), never the pasted text, which lists other challengers.
 - **Restore** (Options › Your data) replaces what's in this browser with a backup, after setting
   aside what's there. A backup from an older version is brought up to date as it's restored; one
-  from a newer version isn't restored until you update. To undo **Clear**, **Clear all**,
-  **Clear notes**, **Clear schedule**, **Clear background**, **Delete deep dive**, **Remove** on
-  someone you looked up, **Remove day** or **Replace schedule**, restore the one listed "before
+  from a newer version isn't restored until you update. To undo **Forget** (a partner), **Clear
+  all**, **Clear notes**, **Clear schedule**, **Clear background**, **Delete deep dive**, **Remove**
+  on someone you looked up, **Remove day** or **Replace schedule**, restore the one listed "before
   something was removed" from just before it (if there's none, the last daily backup before it).
 - **Another folder for backups:** set `GAUNTLET_COPILOT_BACKUP_DIR` to a full path in your shell's
   profile (so updates keep it), open a new terminal, and run the install line again. The default is
@@ -38,7 +39,8 @@ Deep dives, Ask and looking people up run through Claude Code, signed in with yo
 account, so what they're given goes to Anthropic as part of your Claude Code sessions:
 
 - the portal's facts about the partner, and its project brief with its PDFs' text;
-- your background: your projects from My projects, your resume's text, your links and About you;
+- your background: your projects from My projects with the READMEs and design docs read from their
+  repos (the ones you leave checked under You), your resume's text, your links and About you;
 - your notes on the partner (debriefs included) and your next step;
 - what you ask on the Ask tab, and the people cards you looked up, which Ask and deep dives are
   given;
@@ -64,6 +66,11 @@ filled in or on your clipboard, for your claude.ai account.
   `firebasestorage.googleapis.com` (its permission for that site is how it reads them: the portal
   page itself can't). It talks to nothing else but the helper on your computer.
 - Claude Code searches the web and reads pages for the research, as in any of your sessions.
+- **Your repos' docs** are read by the helper with git, signed in as you are in a terminal (your
+  credential helper or SSH key), from where your repos are (GitHub, your company's GitLab): only
+  the repos your projects on My projects link, after a sync finds one not read yet, or when you
+  click **Read docs** or **Refresh docs** under You. Only the README and the design docs are
+  downloaded.
 - **Share with a friend** saves a file in your downloads, and nothing is sent anywhere: you choose
   whom to give it to. See [Sharing a deep dive](#sharing-a-deep-dive) for what it leaves out.
 
@@ -77,7 +84,7 @@ filled in or on your clipboard, for your claude.ai account.
 - So does any other section (or the caveats) that names you, your links, your resume's file name,
   one of your projects or someone you're meeting there, that links one of a brief's own links
   (shared docs can be private; the partner's own site is public), or that repeats about 8 words in
-  a row of your notes, your next step, a brief, your resume or About you.
+  a row of your notes, your next step, a brief, your resume, About you or a doc read from your repos.
 - Sources and stats from a brief's links or under your links, or that name you or someone you're
   meeting, are left out too.
 - The notice lists exactly which sections the file has. The check for what mentions you is careful
@@ -92,6 +99,9 @@ filled in or on your clipboard, for your claude.ai account.
 - **Claude Code gets only web search and web fetch.** It has no shell, no files and no MCP servers,
   and runs with `--safe-mode`, so your CLAUDE.md, hooks and plugins aren't loaded. Pages it reads
   are data, and an injected instruction has nothing else to reach.
+- **Git only reads your repos' docs.** The helper runs git with arguments, never a shell, for
+  https:// and SSH links only. It never asks for a password (a repo your sign-in can't read says
+  so instead), it stops after 30 seconds, and nothing in the repo runs.
 - **Runs use your plan, never an API key.** The helper removes `ANTHROPIC_API_KEY` and
   `ANTHROPIC_AUTH_TOKEN` from Claude Code's environment.
 - **Web content is sanitised.** Everything Claude writes is rendered through DOMPurify. Images,
