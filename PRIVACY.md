@@ -51,13 +51,24 @@ account, so what they're given goes to Anthropic as part of your Claude Code ses
   (PDF, Word or text);
 - your background: your projects from My projects with the READMEs and design docs read from their
   repos (the ones you leave checked under You), your resume's text, your links and About you;
-- your notes on the partner (debriefs included), your next step, the day you sent a thank-you (so
-  Ask doesn't draft another), whether you marked it Want, Maybe or Pass (one sentence, so the
-  advice fits), and when the partner project you started is due and when you started it;
+- your notes on the partner (debriefs included), your 1–5 rating of a meeting, your next step, the
+  day you sent a thank-you (so Ask doesn't draft another), whether you marked it Want, Maybe or
+  Pass (one sentence, so the advice fits), when the partner project you started is due and when you
+  started it, and how its last check against the brief came out;
 - what you ask on the Ask tab, and the people cards you looked up, which Ask and deep dives are
   given;
 - where you are in the program: the week, the partner's event day (and the last one you met them
   at, once it's over), your own slot, who attends for the partner, and the day's logistics.
+
+**Check against the brief** runs Claude Code in the project's folder, so what it reads there goes
+to Anthropic too, as in any Claude Code session you'd run in that folder: `docs/` (the brief, its
+files' text, your partner notes) and the code it looks at. It can only read (Read, Glob and Grep:
+nothing runs, nothing is changed), and only in a folder **Start the project** wrote.
+
+**Rank my partners** sends, for each partner you've met or marked: its name and tier, your mark,
+your rating, when you last met, the start of your notes (your debriefs first), the start of the
+deep dive's fit and how your project with it stands, and what you said matters most to you, if
+you did. It runs with no tools.
 
 Nothing else does: not the schedule text you paste (it isn't kept), nor other challengers' names
 from an interview sheet. People are looked up only when you click **Look up** or **Refresh** on the
@@ -94,6 +105,10 @@ up) filled in or on your clipboard, for your claude.ai account.
   downloaded.
 - **Share with a friend** saves a file in your downloads, and nothing is sent anywhere: you choose
   whom to give it to. See [Sharing a deep dive](#sharing-a-deep-dive) for what it leaves out.
+- **Log on the portal** fills a card on the portal's Partner interactions page in your browser,
+  as you'd type it: your debrief and your rating (and, for a partner not tracked there yet, picks
+  it and clicks **+ Add**). It never clicks **Add entry**: nothing goes to the portal until you do.
+  What you add is then on the portal, as anything you log there is.
 - **Add to calendar (.ics)** and **Export .md** save a file in your downloads too, and send nothing.
   The calendar file holds your interviews that day, each with its cheat sheet (who you're meeting
   and what you looked up about them, your project to lead with, your prep and questions, the first

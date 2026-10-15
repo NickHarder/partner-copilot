@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installs Partner Copilot 0.4.0, or updates to it: the helper in ~/.gauntlet-copilot/app, and
+# Installs Partner Copilot 0.5.0, or updates to it: the helper in ~/.gauntlet-copilot/app, and
 # the extension in ~/.gauntlet-copilot/extension, the folder you load in Chrome once.
 #   curl -fsSL https://github.com/NickHarder/partner-copilot/releases/latest/download/install.sh | sh
 # On Windows, install.ps1 does the same from PowerShell.
@@ -32,14 +32,14 @@ main() {
 
   # Not exported: with GAUNTLET_COPILOT_HOME set, the helper would keep your backups in this folder.
   dir=${GAUNTLET_COPILOT_HOME:-$HOME/.gauntlet-copilot}
-  url=${GAUNTLET_COPILOT_RELEASE_URL:-https://github.com/NickHarder/partner-copilot/releases/download/v0.4.0}
+  url=${GAUNTLET_COPILOT_RELEASE_URL:-https://github.com/NickHarder/partner-copilot/releases/download/v0.5.0}
   (umask 077 && mkdir -p "$dir")
   # Downloaded next to where the files go, so each moves into place with a rename.
   tmp=$(mktemp -d "$dir/download.XXXXXX")
   trap 'rm -rf "$tmp"' EXIT
   trap 'exit 1' HUP INT TERM
 
-  echo "Downloading Partner Copilot 0.4.0…"
+  echo "Downloading Partner Copilot 0.5.0…"
   { curl -fsSL "$url/gauntlet-copilot-cli.js" -o "$tmp/cli.js" &&
     curl -fsSL "$url/partner-copilot-extension.tar.gz" -o "$tmp/extension.tar.gz" &&
     mkdir "$tmp/extension" && tar -xzf "$tmp/extension.tar.gz" -C "$tmp/extension" &&

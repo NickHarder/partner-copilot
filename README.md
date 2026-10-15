@@ -51,11 +51,20 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   that's yours to edit, and a `CLAUDE.md` that has Claude Code read `docs/` first. Run `claude` in
   it. The board and the partner's header then say **Project due Fri, Oct 23 · in 2 days**, and Ask
   knows when it's due. **Write again** brings `docs/` and `CLAUDE.md` up to date and never
-  touches your README; **Change folder** writes it somewhere else.
-- **After a meeting.** **How did it go?** adds a debrief to your notes and sets a next step, with a
-  due date if you like, that the board reminds you of. **Draft a thank-you** writes a note to the
+  touches your README; **Change folder** writes it somewhere else. **Check against the brief**
+  has Claude Code read the folder (it can only read: nothing runs and nothing changes) and list
+  each requirement of the brief and its files as done, partial, missing or at risk, with where in
+  the code and why, then what to do next.
+- **After a meeting.** **How did it go?** adds a debrief to your notes, a 1–5 rating if you like,
+  and a next step, with a due date if you like, that the board reminds you of. **Log on the
+  portal** fills the partner's card on the portal's Partner interactions page with your debrief
+  and rating (adding the partner there first if it isn't tracked yet), and stops: you read it and
+  click **Add entry** yourself, then **Logged ✓**. **Draft a thank-you** writes a note to the
   people you met, and home reminds you to send one after your interviews until you click
   **Sent ✓** (Ask is told, so it doesn't draft another).
+- **Rank my partners**, under the board: one order of the partners you've met or marked, best
+  first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
+  and your projects. Move them up or down, then **Copy** the list for the program's ranking form.
 - **Share a deep dive with a friend.** It saves a file without your notes, mark, chat, people or
   the sections about you. Your friend imports it and redoes those sections with their own background.
 
