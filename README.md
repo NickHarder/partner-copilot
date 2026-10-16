@@ -55,13 +55,32 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   has Claude Code read the folder (it can only read: nothing runs and nothing changes) and list
   each requirement of the brief and its files as done, partial, missing or at risk, with where in
   the code and why, then what to do next.
-- **After a meeting.** **How did it go?** adds a debrief to your notes, a 1–5 rating if you like,
-  and a next step, with a due date if you like, that the board reminds you of. **Log on the
+- **Log any conversation, when it happens.** An interview, a chat at the bar, coffee before your
+  slot, a call: **Log a conversation** on a partner (or **Met someone? Log it** on home, or
+  **Alt+Shift+L** anywhere) takes when, what kind, with whom and where, then your debrief, a 1–5
+  rating if you like, and a next step, with a due date if you like, that the board reminds you of.
+  Your slot has **Debrief now** from the moment it starts, and **How did it go?** asks after it,
+  until it's debriefed. Each partner's **Conversations** list them newest first, with **Edit** and
+  **Delete** (your notes follow), and each person you met says when you last talked. **Plan a
+  meeting** puts one you set up (coffee, a call) on your day, and asks how it went after it.
+  **Log on the
   portal** fills the partner's card on the portal's Partner interactions page with your debrief
   and rating (adding the partner there first if it isn't tracked yet), and stops: you read it and
   click **Add entry** yourself, then **Logged ✓**. **Draft a thank-you** writes a note to the
   people you met, and home reminds you to send one after your interviews until you click
   **Sent ✓** (Ask is told, so it doesn't draft another).
+- **Your calendar beside your days.** In Options › Your calendar, import an .ics file or paste
+  your calendar's secret iCal link (Google's "Secret address in iCal format", or Outlook's or
+  Apple's), read again every 30 minutes. Its events show grey between your slots on Your day, and
+  a slot that overlaps one says **⚠ Overlaps Dentist, 10:00–10:45**. It stays in this browser and
+  never goes to Claude.
+- **Interview mode, safe on screen.** If the panel is open in an interview, it shows only what's
+  about the company and reads as keen: **Top picks**, with the partner you're meeting first and a
+  ★, its deep dive's company sections, who you're meeting and the questions to ask them. Your marks,
+  ratings, ranking, notes, conversations, the Ask tab and your calendar's titles are hidden. It
+  turns itself on from 10 minutes before each of your slots until it ends (Options › Program can
+  turn that off), and **Alt+Shift+I**, the toolbar icon's right-click menu or the header's
+  **Interview mode** switch it by hand. Turned off during a slot, it stays off for that slot.
 - **Rank my partners**, under the board: one order of the partners you've met or marked, best
   first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
   and your projects. Move them up or down, then **Copy** the list for the program's ranking form.

@@ -11,7 +11,7 @@ The paths are a Mac's and Linux's. On Windows, `~` is your profile folder, `%USE
 
 | Place | What's there | How long |
 | --- | --- | --- |
-| Chrome's extension storage (on your disk, in your Chrome profile; not the cache) | Partners, briefs, deep dives, chats, notes, next steps (and when you sent a thank-you), your Want / Maybe / Pass marks, the partner projects you started (each one's folder and due date), people cards, the schedule, your background (with the docs read from your repos), settings | Until you clear it, or remove the extension |
+| Chrome's extension storage (on your disk, in your Chrome profile; not the cache) | Partners, briefs, deep dives, chats, notes, your conversations with each partner (debriefs, ratings, next steps, when you sent a thank-you), meetings you planned, your calendar's events (and its secret link, if you gave one), your Want / Maybe / Pass marks, the partner projects you started (each one's folder and due date), people cards, the schedule, your background (with the docs read from your repos), settings | Until you clear it, or remove the extension |
 | `~/Partner Copilot/Backups/` | A backup a minute after each change (one file a day), plus one set aside before a restore, and before a change removes partners, deep dives, notes, people you looked up, or part of the schedule or your background (the day's first change too) | The newest 7 days and 10 set-aside backups |
 | `~/Partner Copilot/Partners/<Company>/` | `deep-dive.md`, `notes.md` (with your mark, your next step and the day you sent a thank-you), `people.md` (the people you looked up), and one `chat-<date>-<time>.md` per conversation, named by when it started, in your time zone | Kept, even after Clear all: delete them yourself |
 | `~/Partner Copilot/Projects/<Company> - <Project>/` (or the folder you chose) | Written when you click **Write the project folder** on a partner's Project tab: `README.md` (once, then yours), `CLAUDE.md`, and in `docs/` the brief, the text of its attached files, and the deep dive's partner project, fit and engineering sections with your notes on the partner. **Write again** rewrites only the files Partner Copilot wrote | Kept, even after Clear all: it's your project |
@@ -25,7 +25,8 @@ The paths are a Mac's and Linux's. On Windows, `~` is your profile folder, `%USE
   its latest 200 messages; the Claude Code session holds the whole conversation. Redo runs,
   look-ups of people and the sign-in check leave no session behind. Options › Your data shows the
   sizes.
-- **Not in backups:** the helper's pairing token and the access tokens in brief attachment links.
+- **Not in backups:** the helper's pairing token, the access tokens in brief attachment links, and
+  your calendar (its events and its secret link): import it again after a restore.
   The schedule keeps what was read (each day's partners, logistics and notes, your own slots, and
   who attends for each partner), never the pasted text, which lists other challengers.
 - **Restore** (Options › Your data) replaces what's in this browser with a backup, after setting
@@ -51,7 +52,8 @@ account, so what they're given goes to Anthropic as part of your Claude Code ses
   (PDF, Word or text);
 - your background: your projects from My projects with the READMEs and design docs read from their
   repos (the ones you leave checked under You), your resume's text, your links and About you;
-- your notes on the partner (debriefs included), your 1–5 rating of a meeting, your next step, the
+- your notes on the partner (debriefs included), your last few conversations with it (when, what
+  kind, with whom, your rating and next step), your 1–5 rating of a meeting, your next step, the
   day you sent a thank-you (so Ask doesn't draft another), whether you marked it Want, Maybe or
   Pass (one sentence, so the advice fits), when the partner project you started is due and when you
   started it, and how its last check against the brief came out;
@@ -70,7 +72,8 @@ your rating, when you last met, the start of your notes (your debriefs first), t
 deep dive's fit and how your project with it stands, and what you said matters most to you, if
 you did. It runs with no tools.
 
-Nothing else does: not the schedule text you paste (it isn't kept), nor other challengers' names
+Nothing else does: not your calendar (no titles, no times, not even that you're busy), not the
+schedule text you paste (it isn't kept), nor other challengers' names
 from an interview sheet. People are looked up only when you click **Look up** or **Refresh** on the
 People tab, or **Start** under **Prepare this day** with **Also look up who you're meeting** ticked,
 and only the partner's portal facts, their names and when you meet go in, never your background.
@@ -103,6 +106,12 @@ up) filled in or on your clipboard, for your claude.ai account.
   the repos your projects on My projects link, after a sync finds one not read yet, or when you
   click **Read docs** or **Refresh docs** under You. Only the README and the design docs are
   downloaded.
+- **Your calendar's secret link**, if you gave one, is read by the helper every 30 minutes (and
+  when the panel opens): one request to that link, from your computer, as your calendar app would
+  make. Only an https:// (or webcal://) link to a public address is read, never one on your
+  computer or its network (checked as it connects, redirects too), at most 5 MB in 15 seconds. The
+  helper keeps nothing and logs only its size, never the link. **Remove** in Options › Your
+  calendar forgets the link and its events.
 - **Share with a friend** saves a file in your downloads, and nothing is sent anywhere: you choose
   whom to give it to. See [Sharing a deep dive](#sharing-a-deep-dive) for what it leaves out.
 - **Log on the portal** fills a card on the portal's Partner interactions page in your browser,
@@ -148,6 +157,10 @@ up) filled in or on your clipboard, for your claude.ai account.
   `ANTHROPIC_AUTH_TOKEN` from Claude Code's environment. **Prepare this day** says how many deep
   dives it will run or refresh, and about how long, before it starts any; the helper runs two at a
   time and queues the rest.
+- **Interview mode** keeps what's private off the screen: while it's on, the panel never draws
+  your marks, ratings, ranking, notes, conversations, the Ask tab or your calendar's titles.
+- **Permissions.** 0.6.0 adds `contextMenus`, for the toolbar icon's right-click menu (Log a
+  conversation, Interview mode). Chrome shows no new warning for it.
 - **Web content is sanitised.** Everything Claude writes is rendered through DOMPurify. Images,
   styles, forms and non-http links are dropped.
 - **A friend's deep dive is data.** The prompts give it to Claude as another engineer's work (data,
