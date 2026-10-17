@@ -73,7 +73,10 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   your calendar's secret iCal link (Google's "Secret address in iCal format", or Outlook's or
   Apple's), read again every 30 minutes. Its events show grey between your slots on Your day, and
   a slot that overlaps one says **⚠ Overlaps Dentist, 10:00–10:45**. It stays in this browser and
-  never goes to Claude.
+  never goes to Claude. An interview that's only in your calendar (set up by email, say) becomes one
+  of your slots with **It's an interview…** on its event, or **Plan a meeting › Fill it in from your
+  calendar** on a day the schedule doesn't have: pick the partner, check what's filled in, **Plan
+  it**.
 - **Interview mode, safe on screen.** If the panel is open in an interview, it shows only what's
   about the company and reads as keen: **Top picks**, with the partner you're meeting first and a
   ★, its deep dive's company sections, who you're meeting and the questions to ask them. Your marks,

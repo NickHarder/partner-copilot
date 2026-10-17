@@ -106,6 +106,10 @@ up) filled in or on your clipboard, for your claude.ai account.
   the repos your projects on My projects link, after a sync finds one not read yet, or when you
   click **Read docs** or **Refresh docs** under You. Only the README and the design docs are
   downloaded.
+- **It's an interview…** copies one of your calendar's events (its day, time, length, title and
+  place, as you check them in the form) into a meeting you planned with a partner, once you click
+  **Plan it**. From then on it's a planned meeting like any other, so the deep dives and Ask hear
+  about it as they do your slots. Your calendar's other events still go nowhere.
 - **Your calendar's secret link**, if you gave one, is read by the helper every 30 minutes (and
   when the panel opens): one request to that link, from your computer, as your calendar app would
   make. Only an https:// (or webcal://) link to a public address is read, never one on your
