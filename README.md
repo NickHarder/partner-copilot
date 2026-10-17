@@ -18,8 +18,18 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   who you're meeting, a card each. Company is what the portal's profile says, and Project is the
   project brief with its attached files: PDF, Word (.docx) and text files are read in your browser
   (an old Word .doc or other Office file can't be: its row says to ask the partner for a PDF or
-  .docx). Under the partner's name, **Want · Maybe · Pass** marks where it stands with you (click
-  the one that's on to clear it); the board and the prompts follow.
+  .docx). Under the partner's name, **Want · Maybe** marks where it stands with you (click the one
+  that's on to clear it); the board and the prompts follow.
+- **Not moving on.** Done with a partner, whatever the reason? **Not moving on** under its name
+  asks why (They passed, I withdrew, Not interested, Role filled / not hiring, Other, or **On hold**
+  until a day you pick, when it comes back by itself), an optional note, and how its slots show on
+  Your day: as normal, greyed, or hidden (one line, "1 slot hidden", shows them for now). It leaves
+  the board for its **Closed** filter, with no reminders, no Prepare this day, no Rank (unless you
+  tick it), and its meetings you planned can go with it. Nothing is deleted, and the portal isn't
+  touched: its page shows why under a banner, with **Change** and **Reopen** (back as it was, with
+  its Want or Maybe), and for "I withdrew" or "They passed", a note drafted to fit, through Ask.
+  After a debrief rated 1–2 stars, or one saying they're going another way, home asks "Not moving on
+  with them?": it never closes anything itself. (0.9 turned Pass into Not moving on, not interested.)
 - **You.** Your name as interview sheets list it, your resume, links, a note about you, and your
   projects from My projects, in one place. Deep dives and Ask use them, with the README and design
   docs of each project's repo, read with your own git sign-in (so a private repo works too). You
@@ -33,14 +43,14 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   PM** and the one after it **Next · in 12 min**. Above it, **After your interviews** lists each
   debrief, thank-you to send or next step waiting on you. Below it, a board of your partners: first
   the ones waiting on you after a meeting, then by when you meet each one, the ones you marked
-  **Want** first on their day. A **Want** filter lists your first choices; a partner marked **Pass**
-  sinks to the bottom, greyed, and shows under **All** only. **Add to calendar (.ics)** under a day
+  **Want** first on their day. A **Want** filter lists your first choices, and **Closed** the ones
+  you're not moving on with, each with why. **Add to calendar (.ics)** under a day
   saves it for your own calendar: an event per interview of yours, with its cheat sheet and a
   reminder 10 minutes before (a day you have no interview on is one all-day event with its
   partners). **Prepare this day** reads the day's partners not read yet from the portal, runs each
   missing deep dive and refreshes each out-of-date one (as its **Refresh** does), two at a time,
   after saying how many and about how long, from your plan. Looking up who you're meeting is a box
-  you tick; a partner you marked Pass is left out.
+  you tick; a partner you closed out is left out.
 - **A deep dive takes a few minutes.** Meanwhile its board row says **Researching…** with the
   time so far, and the toolbar icon shows **…**, then **✓** (or **!** if it stopped) until you
   open it, even if you closed the panel.
@@ -95,11 +105,13 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   or (**My Gauntlet mentor**) one for your mentor check-in: where your head's at, your ranking and
   why, the interviews coming up and which round each is, your notes from each conversation (rating,
   debrief, next step, thank-you sent, logged on the portal), your partner projects and how their
-  check against the brief stands, and who you passed on, with no company recaps.
+  check against the brief stands, and who you closed out, grouped by why ("2 passed on me · 1 I
+  withdrew") with your note on each, with no company recaps.
   For someone at home:
   It has where things stand, your ranking with its reasons, how each interview went (your rating and
   the start of your debrief), what's coming up, where each job would be (remote, hybrid or on site,
-  and the city) and each company in a line. Tick what goes in, **Preview** it, then **Save as file**
+  and the city) and each company in a line, plus one line on who's no longer in the running and
+  why (you can tick it off). Tick what goes in, **Preview** it, then **Save as file**
   (one page that reads well on a phone) or **Copy as text**. The people you met are named by their
   role unless you tick **Name the people I met**; your notes, the deep dives' fit and risks, Ask and
   your calendar never go in. Made here, with no Claude run.

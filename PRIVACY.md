@@ -11,7 +11,7 @@ The paths are a Mac's and Linux's. On Windows, `~` is your profile folder, `%USE
 
 | Place | What's there | How long |
 | --- | --- | --- |
-| Chrome's extension storage (on your disk, in your Chrome profile; not the cache) | Partners, briefs, deep dives, chats, notes, your conversations with each partner (debriefs, ratings, next steps, when you sent a thank-you), meetings you planned, your calendar's events (and its secret link, if you gave one), your Want / Maybe / Pass marks, the partner projects you started (each one's folder and due date), people cards, the schedule, your background (with the docs read from your repos), settings | Until you clear it, or remove the extension |
+| Chrome's extension storage (on your disk, in your Chrome profile; not the cache) | Partners, briefs, deep dives, chats, notes, your conversations with each partner (debriefs, ratings, next steps, when you sent a thank-you), meetings you planned, your calendar's events (and its secret link, if you gave one), your Want / Maybe marks, the partners you closed out (why, your note, how their slots show), the partner projects you started (each one's folder and due date), people cards, the schedule, your background (with the docs read from your repos), settings | Until you clear it, or remove the extension |
 | `~/Partner Copilot/Backups/` | A backup a minute after each change (one file a day), plus one set aside before a restore, and before a change removes partners, deep dives, notes, people you looked up, or part of the schedule or your background (the day's first change too) | The newest 7 days and 10 set-aside backups |
 | `~/Partner Copilot/Partners/<Company>/` | `deep-dive.md`, `notes.md` (with your mark, your next step and the day you sent a thank-you), `people.md` (the people you looked up), and one `chat-<date>-<time>.md` per conversation, named by when it started, in your time zone | Kept, even after Clear all: delete them yourself |
 | `~/Partner Copilot/Projects/<Company> - <Project>/` (or the folder you chose) | Written when you click **Write the project folder** on a partner's Project tab: `README.md` (once, then yours), `CLAUDE.md`, and in `docs/` the brief, the text of its attached files, and the deep dive's partner project, fit and engineering sections with your notes on the partner. **Write again** rewrites only the files Partner Copilot wrote | Kept, even after Clear all: it's your project |
@@ -54,8 +54,8 @@ account, so what they're given goes to Anthropic as part of your Claude Code ses
   repos (the ones you leave checked under You), your resume's text, your links and About you;
 - your notes on the partner (debriefs included), your last few conversations with it (when, what
   kind, with whom, your rating and next step), your 1–5 rating of a meeting, your next step, the
-  day you sent a thank-you (so Ask doesn't draft another), whether you marked it Want, Maybe or
-  Pass (one sentence, so the advice fits), when the partner project you started is due and when you
+  day you sent a thank-you (so Ask doesn't draft another), whether you marked it Want or Maybe, or
+  closed it out and why, with your note (one sentence, so the advice fits), when the partner project you started is due and when you
   started it, and how its last check against the brief came out;
 - what you ask on the Ask tab, and the people cards you looked up, which Ask and deep dives are
   given;
