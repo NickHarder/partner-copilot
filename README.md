@@ -91,7 +91,12 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
 - **Rank my partners**, under the board: one order of the partners you've met or marked, best
   first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
   and your projects. Move them up or down, then **Copy** the list for the program's ranking form.
-- **Catch someone up**, under the board: an update for someone at home who isn't in the program.
+- **Catch someone up**, under the board: an update for someone at home who isn't in the program,
+  or (**My Gauntlet mentor**) one for your mentor check-in: where your head's at, your ranking and
+  why, the interviews coming up and which round each is, your notes from each conversation (rating,
+  debrief, next step, thank-you sent, logged on the portal), your partner projects and how their
+  check against the brief stands, and who you passed on, with no company recaps.
+  For someone at home:
   It has where things stand, your ranking with its reasons, how each interview went (your rating and
   the start of your debrief), what's coming up, where each job would be (remote, hybrid or on site,
   and the city) and each company in a line. Tick what goes in, **Preview** it, then **Save as file**

@@ -166,7 +166,8 @@ up) filled in or on your clipboard, for your claude.ai account.
 - **Catch someone up** is made in your browser from what's saved, with no Claude run, and goes only
   where you send it. It never carries your notes beyond the start of each debrief, Ask, the deep
   dives' fit, risks or interview prep, your calendar, or other challengers; the people you met are
-  named by their role unless you choose otherwise.
+  named by their role unless you choose otherwise. The mentor version names them by default (it's
+  for Gauntlet) and has longer debrief excerpts, still never your other notes, Ask or your calendar.
 - **Interview mode** keeps what's private off the screen: while it's on, the panel never draws
   your marks, ratings, ranking, notes, conversations, the Ask tab, the deep dive's risks or your
   calendar's titles, and nothing on screen says it's on.
