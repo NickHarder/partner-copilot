@@ -56,8 +56,8 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   each requirement of the brief and its files as done, partial, missing or at risk, with where in
   the code and why, then what to do next.
 - **Log any conversation, when it happens.** An interview, a chat at the bar, coffee before your
-  slot, a call: **Log a conversation** on a partner (or **Met someone? Log it** on home, or
-  **Alt+Shift+L** anywhere) takes when, what kind, with whom and where, then your debrief, a 1–5
+  slot, a call: **Log a conversation** on a partner's Deep dive (or **Alt+Shift+L** anywhere, which
+  asks which partner on home) takes when, what kind, with whom and where, then your debrief, a 1–5
   rating if you like, and a next step, with a due date if you like, that the board reminds you of.
   Your slot has **Debrief now** from the moment it starts, and **How did it go?** asks after it,
   until it's debriefed. Each partner's **Conversations** list them newest first, with **Edit** and
@@ -74,16 +74,20 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   Apple's), read again every 30 minutes. Its events show grey between your slots on Your day, and
   a slot that overlaps one says **⚠ Overlaps Dentist, 10:00–10:45**. It stays in this browser and
   never goes to Claude. An interview that's only in your calendar (set up by email, say) becomes one
-  of your slots with **It's an interview…** on its event, or **Plan a meeting › Fill it in from your
-  calendar** on a day the schedule doesn't have: pick the partner, check what's filled in, **Plan
-  it**.
-- **Interview mode, safe on screen.** If the panel is open in an interview, it shows only what's
-  about the company and reads as keen: **Top picks**, with the partner you're meeting first and a
-  ★, its deep dive's company sections, who you're meeting and the questions to ask them. Your marks,
-  ratings, ranking, notes, conversations, the Ask tab and your calendar's titles are hidden. It
-  turns itself on from 10 minutes before each of your slots until it ends (Options › Program can
-  turn that off), and **Alt+Shift+I**, the toolbar icon's right-click menu or the header's
-  **Interview mode** switch it by hand. Turned off during a slot, it stays off for that slot.
+  of your slots with **It's an interview…** on its event (pick the partner), or, on the partner's
+  **Plan a meeting**, **From your calendar** on a day the schedule doesn't have: check what's
+  filled in, **Plan it**.
+- **Interview mode, safe on screen, and it doesn't say so.** If the panel is open in an
+  interview, it shows only what's about the company and reads as keen: **Partners I'm most
+  excited about** (the partner you're meeting first, with a ★, then up to 3 you marked Want), who
+  you're meeting and the questions to ask them, **My questions** from the interview prep (never
+  its red flags), the deep dive's company sections, and **Culture & company**. Nothing on screen
+  names the mode. Your marks, ratings, ranking, notes, conversations, the Ask tab, risks and your
+  calendar's titles are hidden. It turns itself on from 10 minutes before each of your slots until
+  it ends, and opens that slot's partner even if you were on another (Options › Program can turn
+  that off). **Alt+Shift+I**, the toolbar icon's right-click menu, or **⋯** at the top right
+  (**Interview mode** / **Show everything**) switch it by hand. Turned off during a slot, it stays
+  off for that slot.
 - **Rank my partners**, under the board: one order of the partners you've met or marked, best
   first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
   and your projects. Move them up or down, then **Copy** the list for the program's ranking form.
@@ -145,14 +149,24 @@ not being used. There's no terminal to keep open.
    - **Tell it about you**: under **You**, add your name as interview sheets list it and your resume
      as a PDF or .docx (it's read in your browser), and click **Save**. Then open **My projects** on
      the portal and click **Sync to Copilot** at the bottom right of that page.
-   - **Add your schedule** (optional): paste the event-day announcements and your interview sheets
-     from Slack, and click **Add**. Add later ones with **Add a sheet**: they're kept, day by day.
+   - **Add your schedule** (optional): **Import your schedule**, then **Choose a file…** for the
+     .xlsx Gauntlet sends (a sheet per day), a PDF, or drop the file on the card, or paste the
+     event-day announcements from Slack. Without a name set it asks for yours, suggesting the names
+     on the sheets, and shows your interviews before you **Save**. Add later ones with **Add a
+     day**: they're kept, day by day. The file is read in your browser and never sent.
    - **Run your first deep dive**: on **Partner projects**, click **Company info** on a partner, or
      **View full profile** on a card on **Hiring partners**. The panel opens on it and starts a deep
      dive, which takes a few minutes. Add your resume first, so it's written for you.
 
 When every step is done, it says **You're set up**. **Help**, at the bottom of the panel, shows the
 list again, with links to this guide.
+
+**Shortcuts:** **Alt+Shift+I** switches Interview mode, **Alt+Shift+L** logs a conversation. Both
+are on the toolbar icon's right-click menu too; change them at `chrome://extensions/shortcuts`.
+
+**On interview day:** Interview mode turns itself on 10 minutes before each of your slots and opens
+that partner: the company, who you're meeting and your questions, nothing private. Switch it with
+**Alt+Shift+I** or **⋯** at the top right.
 
 ## Update
 

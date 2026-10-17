@@ -77,7 +77,9 @@ schedule text you paste (it isn't kept), nor other challengers' names
 from an interview sheet. People are looked up only when you click **Look up** or **Refresh** on the
 People tab, or **Start** under **Prepare this day** with **Also look up who you're meeting** ticked,
 and only the partner's portal facts, their names and when you meet go in, never your background.
-Files never leave the browser, only their text: your resume, and the brief's attached files (PDF,
+Files never leave the browser, only their text: your resume, the schedule file you import (the
+.xlsx Gauntlet sends, a PDF or text, read in the browser; only what's read from it is kept, as from
+a paste, never the file or other challengers' names), and the brief's attached files (PDF,
 Word or text, each read in the browser), whose download links carry access tokens and stay in the
 browser. Starting a project writes that text, never the files or their links, to the project's
 folder on your computer, and sends nothing to Claude: the folder is for your own Claude Code
@@ -162,7 +164,8 @@ up) filled in or on your clipboard, for your claude.ai account.
   dives it will run or refresh, and about how long, before it starts any; the helper runs two at a
   time and queues the rest.
 - **Interview mode** keeps what's private off the screen: while it's on, the panel never draws
-  your marks, ratings, ranking, notes, conversations, the Ask tab or your calendar's titles.
+  your marks, ratings, ranking, notes, conversations, the Ask tab, the deep dive's risks or your
+  calendar's titles, and nothing on screen says it's on.
 - **Permissions.** 0.6.0 adds `contextMenus`, for the toolbar icon's right-click menu (Log a
   conversation, Interview mode). Chrome shows no new warning for it.
 - **Web content is sanitised.** Everything Claude writes is rendered through DOMPurify. Images,
