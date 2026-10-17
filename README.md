@@ -91,6 +91,13 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
 - **Rank my partners**, under the board: one order of the partners you've met or marked, best
   first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
   and your projects. Move them up or down, then **Copy** the list for the program's ranking form.
+- **Catch someone up**, under the board: an update for someone at home who isn't in the program.
+  It has where things stand, your ranking with its reasons, how each interview went (your rating and
+  the start of your debrief), what's coming up, where each job would be (remote, hybrid or on site,
+  and the city) and each company in a line. Tick what goes in, **Preview** it, then **Save as file**
+  (one page that reads well on a phone) or **Copy as text**. The people you met are named by their
+  role unless you tick **Name the people I met**; your notes, the deep dives' fit and risks, Ask and
+  your calendar never go in. Made here, with no Claude run.
 - **Share a deep dive with a friend.** It saves a file without your notes, mark, chat, people or
   the sections about you. Your friend imports it and redoes those sections with their own background.
 
