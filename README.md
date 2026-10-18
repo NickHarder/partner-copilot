@@ -34,15 +34,21 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   projects from My projects, in one place. Deep dives and Ask use them, with the README and design
   docs of each project's repo, read with your own git sign-in (so a private repo works too). You
   choose which docs go in.
-- **Home.** Your next event day: your interviews by time and room, each with one chip for what's
+- **Home, in three parts: Today, Partners and Tools.** It opens on the one you used last.
+  **Today** starts with **Up next**: your slot that's on, or the next one, with what's ready for it
+  and its **Cheat sheet**. Then **Needs you**: each debrief, thank-you to send or next step waiting
+  on you, and each partner you met this week with no deep dive yet. **Partners** is the board,
+  with a box to find a partner by name and its filters (**All**, **This week**, **Want**,
+  **Closed**, and **More ▾** for Project, To research and Follow-ups). **Tools** holds Rank my
+  partners, Catch someone up, Import schedule, Add a partner and **Log a conversation…**.
+- **Your day, on Today.** Your next event day: your interviews by time and room, each with one chip for what's
   ready for it: **Ready**, or the first thing left (**Look up 2 people**). Open it for each part
   (**Brief ✓**, **Deep dive ✓**, **Prep ✓**, who you're meeting, **✎ Notes**). **Prep ✓**
   opens straight to the interview prep. Each slot has a **Cheat sheet** made from what's saved (who
   attends with what you looked up about them, your project to lead with, the start of the interview
   prep and its questions, your notes) to **Copy** or **Print** (it prints alone, on one page), so
   you can print it the evening before. On the day, the slot that's on is marked **Now · ends 4:15
-  PM** and the one after it **Next · in 12 min**. Above it, **After your interviews** lists each
-  debrief, thank-you to send or next step waiting on you. Below it, a board of your partners: first
+  PM** and the one after it **Next · in 12 min**. On Partners, the board of your partners: first
   the ones waiting on you after a meeting, then by when you meet each one, the ones you marked
   **Want** first on their day. A **Want** filter lists your first choices, and **Closed** the ones
   you're not moving on with, each with why. **Add to calendar (.ics)** under a day
@@ -99,10 +105,10 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   that off). **Alt+Shift+I**, the toolbar icon's right-click menu, or **⋯** at the top right
   (**Interview mode** / **Show everything**) switch it by hand. Turned off during a slot, it stays
   off for that slot.
-- **Rank my partners**, under the board: one order of the partners you've met or marked, best
+- **Rank my partners**, under Tools: one order of the partners you've met or marked, best
   first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
   and your projects. Move them up or down, then **Copy** the list for the program's ranking form.
-- **Catch someone up**, under the board: an update for someone at home who isn't in the program,
+- **Catch someone up**, under Tools: an update for someone at home who isn't in the program,
   or (**My Gauntlet mentor**) one for your mentor check-in: where your head's at, your ranking and
   why, the interviews coming up and which round each is, your notes from each conversation (rating,
   debrief, next step, thank-you sent, logged on the portal), your partner projects and how their

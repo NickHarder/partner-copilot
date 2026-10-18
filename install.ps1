@@ -1,4 +1,4 @@
-# Installs Partner Copilot 0.10.0, or updates to it: the helper in %USERPROFILE%\.gauntlet-copilot\app,
+# Installs Partner Copilot 0.11.0, or updates to it: the helper in %USERPROFILE%\.gauntlet-copilot\app,
 # and the extension in %USERPROFILE%\.gauntlet-copilot\extension, the folder you load in Chrome once.
 #   irm https://github.com/NickHarder/partner-copilot/releases/latest/download/install.ps1 | iex
 # GAUNTLET_COPILOT_RELEASE_URL downloads another release's files (in tests, a folder on this computer).
@@ -52,13 +52,13 @@ function Install-PartnerCopilot {
     $dir = $env:GAUNTLET_COPILOT_HOME
     if (-not $dir) { $dir = Join-Path $env:USERPROFILE '.gauntlet-copilot' }
     $url = $env:GAUNTLET_COPILOT_RELEASE_URL
-    if (-not $url) { $url = 'https://github.com/NickHarder/partner-copilot/releases/download/v0.10.0' }
+    if (-not $url) { $url = 'https://github.com/NickHarder/partner-copilot/releases/download/v0.11.0' }
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
     # Downloaded next to where the files go, so each moves into place with a rename.
     $tmp = Join-Path $dir ('download.' + [IO.Path]::GetRandomFileName())
     New-Item -ItemType Directory -Path $tmp | Out-Null
     try {
-      Write-Host 'Downloading Partner Copilot 0.10.0...'
+      Write-Host 'Downloading Partner Copilot 0.11.0...'
       try {
         Get-ReleaseFile "$url/gauntlet-copilot-cli.js" (Join-Path $tmp 'cli.js')
         Get-ReleaseFile "$url/partner-copilot-extension.zip" (Join-Path $tmp 'extension.zip')
