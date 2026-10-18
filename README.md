@@ -180,7 +180,8 @@ not being used. There's no terminal to keep open.
    [Troubleshooting](#troubleshooting).
 2. If you haven't pinned it yet: click the puzzle piece in the toolbar, then the pin next to Partner
    Copilot.
-3. Follow **Get started** at the top of the panel's home. Each step ticks itself once it's done:
+3. Follow **Get started** at the top of the panel's home: each step in a line, with its button,
+   and **Help** says each in full. Each step ticks itself once it's done:
    - **Connect to Claude Code**: done once the helper answers. If it can't, the step says what to
      run.
    - **Tell it about you**: under **You**, add your name as interview sheets list it and your resume
@@ -196,7 +197,7 @@ not being used. There's no terminal to keep open.
      dive, which takes a few minutes. Add your resume first, so it's written for you.
 
 When every step is done, it says **You're set up**. **Help**, at the bottom of the panel, shows the
-list again, with links to this guide.
+list again, in full, with the shortcuts below, **Debug snapshot** and links to this guide.
 
 **Shortcuts:** **Alt+Shift+I** switches Interview mode, **Alt+Shift+L** logs a conversation. Both
 are on the toolbar icon's right-click menu too; change them at `chrome://extensions/shortcuts`.
