@@ -10,24 +10,29 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
 
 ## What it does
 
-- **A partner's tabs: Deep dive, Ask, People, Company and Project.** The deep dive starts with
-  what's for your interview (interview prep, how your projects fit, the partner project), then
-  covers the company: funding, product, leadership, tech stack, news and risks, with sources. Your
-  notes are at the top, and **⋯ More** has Export .md, Open in claude.ai and the deletes. Ask takes
-  follow-up questions, can search the web again, and has **Copy** on each answer. People looks up
-  who you're meeting, a card each. Company is what the portal's profile says, and Project is the
-  project brief with its attached files: PDF, Word (.docx) and text files are read in your browser
-  (an old Word .doc or other Office file can't be: its row says to ask the partner for a PDF or
-  .docx). Under the partner's name, **Want · Maybe** marks where it stands with you (click the one
-  that's on to clear it); the board and the prompts follow.
-- **Not moving on.** Done with a partner, whatever the reason? **Not moving on** under its name
+- **A partner's tabs: Overview, Deep dive, Ask, People and Project.** Its header is one row: ‹,
+  its name, **Status ▾** and ⋯, then one quiet line with its tier, when you meet and how it works.
+  **Overview** comes first: what's left after a meeting (How did it go?, the next step, the
+  thank-you), **Log a conversation** and **Plan a meeting**, your notes, your conversations, and the
+  company as the portal's profile has it, with its one-liner and website (**More** has its culture,
+  tech stack and the text as read). Company info on the portal opens the **Deep dive**, which is
+  the research alone: it starts with what's for your interview (interview prep, how your projects
+  fit, the partner project), then covers the company: funding, product, leadership, tech stack,
+  news and risks, with sources, and **⋯ More** has Export .md, Open in claude.ai and the deletes.
+  Ask takes follow-up questions, can search the web again, and has **Copy** on each answer. People
+  looks up who you're meeting, a card each. Project is the project brief with its attached files:
+  PDF, Word (.docx) and text files are read in your browser (an old Word .doc or other Office file
+  can't be: its row says to ask the partner for a PDF or .docx). **Status ▾** marks where it stands
+  with you, **Want**, **Maybe** or **No mark**; the board and the prompts follow.
+- **Not moving on.** Done with a partner, whatever the reason? **Not moving on…** under Status ▾
   asks why (They passed, I withdrew, Not interested, Role filled / not hiring, Other, or **On hold**
   until a day you pick, when it comes back by itself), an optional note, and how its slots show on
   Your day: as normal, greyed, or hidden (one line, "1 slot hidden", shows them for now). It leaves
   the board for its **Closed** filter, with no reminders, no Prepare this day, no Rank (unless you
   tick it), and its meetings you planned can go with it. Nothing is deleted, and the portal isn't
-  touched: its page shows why under a banner, with **Change** and **Reopen** (back as it was, with
-  its Want or Maybe), and for "I withdrew" or "They passed", a note drafted to fit, through Ask.
+  touched: its Status ▾ reads why, and holds **Change** and **Reopen** (back as it was, with its
+  Want or Maybe), and for "I withdrew" or "They passed", a note drafted to fit, through Ask; its
+  Overview says why, since when, and your note.
   After a debrief rated 1–2 stars, or one saying they're going another way, home asks "Not moving on
   with them?": it never closes anything itself. (0.9 turned Pass into Not moving on, not interested.)
 - **You.** Your name as interview sheets list it, your resume, links, a note about you, and your
@@ -73,7 +78,7 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   each requirement of the brief and its files as done, partial, missing or at risk, with where in
   the code and why, then what to do next.
 - **Log any conversation, when it happens.** An interview, a chat at the bar, coffee before your
-  slot, a call: **Log a conversation** on a partner's Deep dive (or **Alt+Shift+L** anywhere, which
+  slot, a call: **Log a conversation** on a partner's Overview (or **Alt+Shift+L** anywhere, which
   asks which partner on home) takes when, what kind, with whom and where, then your debrief, a 1–5
   rating if you like, and a next step, with a due date if you like, that the board reminds you of.
   Your slot has **Debrief now** from the moment it starts, and **How did it go?** asks after it,
@@ -102,8 +107,9 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   names the mode. Your marks, ratings, ranking, notes, conversations, the Ask tab, risks and your
   calendar's titles are hidden. It turns itself on from 10 minutes before each of your slots until
   it ends, and opens that slot's partner even if you were on another (Options › Program can turn
-  that off). **Alt+Shift+I**, the toolbar icon's right-click menu, or **⋯** at the top right
-  (**Interview mode** / **Show everything**) switch it by hand. Turned off during a slot, it stays
+  that off). **Alt+Shift+I**, the toolbar icon's right-click menu, **⋯** at the top right
+  (**Interview mode** / **Show everything**), or **Interview mode** on Today's Up next switch it by
+  hand. Turned off during a slot, it stays
   off for that slot.
 - **Rank my partners**, under Tools: one order of the partners you've met or marked, best
   first, each with a line saying why, from your marks, ratings, debriefs, notes, the deep dives' fit
