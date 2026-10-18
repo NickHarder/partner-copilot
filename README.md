@@ -34,7 +34,8 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   projects from My projects, in one place. Deep dives and Ask use them, with the README and design
   docs of each project's repo, read with your own git sign-in (so a private repo works too). You
   choose which docs go in.
-- **Home.** Your next event day: your interviews by time and room, each with what's ready for it
+- **Home.** Your next event day: your interviews by time and room, each with one chip for what's
+  ready for it: **Ready**, or the first thing left (**Look up 2 people**). Open it for each part
   (**Brief ✓**, **Deep dive ✓**, **Prep ✓**, who you're meeting, **✎ Notes**). **Prep ✓**
   opens straight to the interview prep. Each slot has a **Cheat sheet** made from what's saved (who
   attends with what you looked up about them, your project to lead with, the start of the interview
@@ -81,10 +82,10 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   **Sent ✓** (Ask is told, so it doesn't draft another).
 - **Your calendar beside your days.** In Options › Your calendar, import an .ics file or paste
   your calendar's secret iCal link (Google's "Secret address in iCal format", or Outlook's or
-  Apple's), read again every 30 minutes. Its events show grey between your slots on Your day, and
+  Apple's), read again every 30 minutes. Its events show as one grey line between your slots on Your day, and
   a slot that overlaps one says **⚠ Overlaps Dentist, 10:00–10:45**. It stays in this browser and
   never goes to Claude. An interview that's only in your calendar (set up by email, say) becomes one
-  of your slots with **It's an interview…** on its event (pick the partner), or, on the partner's
+  of your slots with **⋯** (It's an interview…) on its line (pick the partner), or, on the partner's
   **Plan a meeting**, **From your calendar** on a day the schedule doesn't have: check what's
   filled in, **Plan it**.
 - **Interview mode, safe on screen, and it doesn't say so.** If the panel is open in an
@@ -294,6 +295,6 @@ different from a Mac or Linux:
 Report a problem or ask for something in [Issues](https://github.com/NickHarder/partner-copilot/issues) (Options and
 the panel's **Help** link there too, as **Report a problem**).
 
-If something on the portal is read wrong, open that page and click **Debug snapshot** at the bottom
-of the side panel: it copies what the extension sees there. It holds text from the portal, so don't
+If something on the portal is read wrong, open that page, click **Help** at the bottom of the side
+panel, then **Debug snapshot**: it copies what the extension sees there. It holds text from the portal, so don't
 post it in the issue: say you have one, and send it privately when asked.
