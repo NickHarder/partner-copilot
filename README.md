@@ -128,8 +128,19 @@ Not affiliated with, endorsed by or supported by Gauntlet AI.
   (one page that reads well on a phone) or **Copy as text**. The people you met are named by their
   role unless you tick **Name the people I met**; your notes, the deep dives' fit and risks, Ask and
   your calendar never go in. Made here, with no Claude run.
-- **Share a deep dive with a friend.** It saves a file without your notes, mark, chat, people or
-  the sections about you. Your friend imports it and redoes those sections with their own background.
+- **Add your own research.** Found something yourself, or had another agent (claude.ai, ChatGPT,
+  Perplexity, a teammate) look into a partner? On its deep dive, **⋯ More › Add your research…**
+  (or Overview › **Your research**): paste it, or choose a `.md`, `.txt`, PDF or Word file, give it
+  a title if you like, then **Merge into the deep dive**. Claude Code works it in, on your chat
+  model with no web searches, in a minute or two: the sections and stats it changes are marked
+  **Updated from your research**, what came from it says (your research: its title), and where it
+  disagrees with the deep dive, the section says so. **Undo** puts the deep dive back as it was.
+  Or **Just save it**. Either way it's kept (Overview lists it, with **Delete**) and given to Ask,
+  Refresh, Redo and the next deep dive. A person on the People tab has **Add your research…** too:
+  merged, it updates their card, with **Undo**. After **Open in claude.ai**, bring the answer back
+  this way.
+- **Share a deep dive with a friend.** It saves a file without your notes, your research, mark,
+  chat, people or the sections about you (or any section your research updated). Your friend imports it and redoes those sections with their own background.
 
 ## What you need
 
@@ -260,7 +271,7 @@ them and everything else, see [Delete everything](PRIVACY.md#delete-everything).
   project folders you start, in its `Projects` folder), and in `~/.gauntlet-copilot` (both under
   `%USERPROFILE%` on Windows). Partner Copilot has no server of its own and no analytics.
 - Research runs through your own Claude Code, so what it needs (the portal's text, project briefs,
-  your background and notes, the names of people you look up) goes to Anthropic, as in any of your
+  your background, notes and research, the names of people you look up) goes to Anthropic, as in any of your
   Claude Code sessions.
 - **Share with a friend** saves a file and sends nothing: you choose whom to give it to.
 
