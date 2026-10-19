@@ -219,7 +219,8 @@ that partner: the company, who you're meeting and your questions, nothing privat
 
 ## Update
 
-Once a day, the helper checks GitHub for a newer version. When there is one, the bottom of the side
+Every 6 hours, the helper checks GitHub for a newer version (or right away: Options › Connection ›
+**Check for updates**). When there is one, the bottom of the side
 panel says **0.13.1 available ↗ · Update now** (with whichever version is newest). Click **Update
 now**: the helper downloads that release's installer and runs it, the way the install line does,
 in about a minute. Then click **Reload to update** at the bottom of the side panel, and reload any

@@ -97,7 +97,8 @@ up) filled in or on your clipboard, for your claude.ai account.
 
 ## Nothing else leaves your computer
 
-- No analytics and no tracking. Once a day, the helper asks GitHub which version of Partner Copilot
+- No analytics and no tracking. Every 6 hours (and when you click **Check for updates**), the
+  helper asks GitHub which version of Partner Copilot
   is the newest, so the panel can say when one is out: one request to `api.github.com`, like
   opening the releases page, with nothing about you or your data in it (only which version is
   asking). To turn that off, set `GAUNTLET_COPILOT_NO_UPDATE_CHECK=1` in your shell's profile, open
