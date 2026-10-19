@@ -98,7 +98,8 @@ up) filled in or on your clipboard, for your claude.ai account.
   opening the releases page, with nothing about you or your data in it (only which version is
   asking). To turn that off, set `GAUNTLET_COPILOT_NO_UPDATE_CHECK=1` in your shell's profile, open
   a new terminal, and run the install line again (on Windows, as a user environment variable, the
-  way the backup folder is set above). Installing or updating downloads from GitHub, and that's all.
+  way the backup folder is set above). Installing or updating downloads from GitHub (Update now
+  downloads the same installer the install line does, and runs it), and that's all.
 - The extension reads the portal as you, signed in, and the brief attachments the portal keeps on
   `firebasestorage.googleapis.com` (its permission for that site is how it reads them: the portal
   page itself can't). It talks to nothing else but the helper on your computer.

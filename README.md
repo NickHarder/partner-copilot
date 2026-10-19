@@ -209,9 +209,13 @@ that partner: the company, who you're meeting and your questions, nothing privat
 ## Update
 
 Once a day, the helper checks GitHub for a newer version. When there is one, the bottom of the side
-panel says **0.4.1 available · What's new ↗** (with whichever version is newest), and Options ›
-Connection shows the install line with a **Copy** button. Run the same line again: on a Mac or
-Linux, in a terminal,
+panel says **0.13.1 available ↗ · Update now** (with whichever version is newest). Click **Update
+now**: the helper downloads that release's installer and runs it, the way the install line does,
+in about a minute. Then click **Reload to update** at the bottom of the side panel, and reload any
+portal tab. Your data stays. Options › Connection has **Update now** too.
+
+If Update now says it didn't finish (or you'd rather), run the install line again yourself: on a Mac
+or Linux, in a terminal,
 
 ```sh
 curl -fsSL https://github.com/NickHarder/partner-copilot/releases/latest/download/install.sh | sh
@@ -223,8 +227,10 @@ and on Windows, in PowerShell,
 irm https://github.com/NickHarder/partner-copilot/releases/latest/download/install.ps1 | iex
 ```
 
-Then click **Reload to update** at the bottom of the side panel (or Partner Copilot's reload button
-on `chrome://extensions`), and reload any portal tab. Your data stays.
+Then **Reload to update** (or Partner Copilot's reload button on `chrome://extensions`). What the
+installer printed when Update now ran it is in `~/.gauntlet-copilot/update.log` (on Windows,
+`%USERPROFILE%\.gauntlet-copilot\update.log`). Versions before 0.13 can't update themselves: run
+the line once to get to 0.13, and Update now does it from then on.
 
 The check sends nothing about you (see [PRIVACY.md](PRIVACY.md#nothing-else-leaves-your-computer)).
 To turn it off, set `GAUNTLET_COPILOT_NO_UPDATE_CHECK=1` in your shell's profile, open a new
@@ -276,7 +282,8 @@ delete it all.
 | A run stops because your plan doesn't include its model | Choose another model in Options, under **Advanced settings › Models** |
 | Under You, "couldn't read this repo with your git sign-in" | Run the `git clone` command it shows in a terminal. Once that works (sign in, or add your SSH key to your git host), click **Refresh docs** |
 | "usage limit is reached" | Wait for the reset (the panel's footer shows your plan's usage), or choose a lighter model in Options |
-| **0.4.1 available** (or another version) at the bottom of the panel | A newer version is out: run the install line under [Update](#update) (Options › Connection has it, with **Copy**), then **Reload to update** |
+| **0.13.1 available ↗ · Update now** (or another version) at the bottom of the panel | A newer version is out: click **Update now**, then **Reload to update** (see [Update](#update)) |
+| **Update didn't finish** at the bottom of the panel | Its tooltip says why. Run the install line under [Update](#update) yourself (Options › Connection has it, with **Copy**), then **Reload to update**. What the installer printed is in `update.log` in `~/.gauntlet-copilot` |
 | **Reload to update** at the bottom of the panel | Click it after an update, then reload any portal tab |
 | "Partner Copilot was updated: reload this page" | Reload the portal tab |
 | Your notes have a line `Saved under "…" before it was linked:` | You took notes under the schedule's spelling of a partner and under the portal's: they were merged when the two were matched. Edit them as you like |
